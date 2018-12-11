@@ -1,0 +1,42 @@
+1 cd d:
+	
+	进入本地目标目录下
+
+2 git init
+
+	建立本地git仓库
+
+3 git remote add [远程分支别名] [http://github.com/w-029/***]
+
+	指定远程仓库地址及别名
+
+4 git add .
+
+	工作区有修改内容存入暂存区
+
+5 git commit -m "提示信息"
+
+
+6  git push --set-upstream Qt_TimerEvent master
+
+	本地库与远程库关联，并推送（如果远程仓库创建时有README，会因尚未合并而失败，继续以下步骤）
+
+7 git pull Qt_TimerEvent master --allow-unrelated-histories
+
+	拉取并合并远程文件到本地（未关联也要执行）
+
+8 i
+
+	进入vim编辑状态，写合并日志
+
+9 esc键
+
+	退出vim编辑状态
+
+10 :wq
+
+	保存日志并退出
+
+11 重复步骤6，完成远程本地库关联并推送。
+
+
