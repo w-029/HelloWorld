@@ -1,0 +1,15 @@
+QCheckBox{
+        spacing: 5px;
+        color: white;
+}
+QCheckBox::indicator {
+        width: 17px;
+        height: 17px;
+}
+QCheckBox::indicator:enabled:unchecked {
+        image: url(:/Images/while_round.png);
+}
+QCheckBox::indicator:enabled:checked {
+        image: url(:/Images/red_round.png);
+}
+#原文：https://blog.csdn.net/liang19890820/article/details/50976944
